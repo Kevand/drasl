@@ -1,0 +1,8 @@
+{
+  "image": "ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/nix:1": {
+      "flakeUri": "github:unmojang/drasl"
+    }
+  }
+}

@@ -1,14 +1,15 @@
 :root {
-  --accent-light: #84dee1;
-  --accent-lighter: #c1eff0;
-  --accent: teal;
-  --accent-dark: #066;
-  --button-shadow-light: #0aab;
-  --button-shadow-dark: #055b;
+  --accent-light: #ff595f;
+  --accent-lighter: rgb(255, 94, 99);
+  --accent: #fc4349;
+  --accent-dark: #cb383d;
+  --button-shadow-light: #da3c42;
+  --button-shadow-dark: #aa2f33;
   --button-shadow-size: 3px;
   --button-highlight-size: 2px;
   --input-border-width: 2px;
-  --font-family: monospace;
+  --font-family: sans-serif;
+  --big-font: 'Bebas Neue';
 }
 
 * {
@@ -29,8 +30,13 @@ body {
   font-size: 1rem;
 }
 
-h1 {
-  font-family: var(--font-family);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--big-font);
 }
 
 hr {
@@ -52,7 +58,8 @@ td:not(:last-child) {
   padding-right: 0.5rem;
 }
 
-thead tr > td, tbody tr:not(:last-child) > td {
+thead tr>td,
+tbody tr:not(:last-child)>td {
   padding-bottom: 0.5rem;
 }
 
@@ -83,11 +90,14 @@ a:visited {
   padding: 5px 0;
   gap: 0.5em;
 }
-.divider::before, .divider::after {
+
+.divider::before,
+.divider::after {
   content: "";
   flex: 1;
   border-top: 1px solid white;
 }
+
 .openid-logo {
   height: 3rem;
   vertical-align: middle;
@@ -109,9 +119,10 @@ a:visited {
   color: white;
 }
 
-.logo > img {
+.logo>img {
   width: 1em;
   height: 1em;
+  filter: invert(1);
 }
 
 .honeypot {
@@ -151,6 +162,7 @@ input.long {
 }
 
 @media (max-width: 600px) {
+
   input[type="text"]:not([hidden]),
   input[type="number"]:not([hidden]),
   input[type="password"]:not([hidden]),
@@ -179,7 +191,7 @@ button,
 input[type="submit"],
 input[type="file"]::file-selector-button {
   margin: 0.5em 0;
-  font-family: var(--font-family);
+  font-family: var(--big-font);
   background-color: var(--accent);
   display: inline-block;
   color: white;

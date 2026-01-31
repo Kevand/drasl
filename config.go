@@ -196,7 +196,7 @@ func DefaultRawConfig() RawConfig {
 			AllowSkins:                 true,
 			AllowTextureFromURL:        false,
 			AllowAddingDeletingPlayers: false,
-			ApplicationName:            "Drasl",
+			ApplicationName:            "Sigil",
 			ApplicationOwner:           "Anonymous",
 			BaseURL:                    "",
 			BodyLimit:                  defaultBodyLimitConfig,

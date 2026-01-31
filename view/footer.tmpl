@@ -2,7 +2,7 @@
   {{ if .App.Config.EnableFooter }}
   <hr />
   <small>
-    {{ call .T `Drasl version %s.` .App.Constants.Version }}
+    {{ call .T `Sigil is a for of Drasl version %s.` .App.Constants.Version }}
     {{ render (call .T `Licensed as {{ index . 0 }}.`) (render `<a href="{{ index . 0 }}">{{ index . 1 }}</a>` .App.Constants.LicenseURL .App.Constants.License) }}
     {{ render (call .T `<a href="{{ index . 0 }}">Source code</a>.`) .App.Constants.RepositoryURL }}
   </small>
